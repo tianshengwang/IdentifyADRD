@@ -8,12 +8,15 @@
 
 **Prevalent Dementia Identification Algorithm**. a dementia diagnosis code must be followed by either another dementia code at least one day apart but within a 12-month period, OR the initial dementia code must be preceded or followed by a prescription for dementia treatment within 90 days<sup>b</sup>.
 
-<sup>a</sup>In our Medicare-ARIC linked data in this publication, this incident dementia identification algorithm requires patients to have continuous Medicare Part D enrollment between V5 and V6. In pharmacoepidemiologic studies, this criterion could be adapted by requiring a minimum length of continuous Medicare Part D enrolment, e.g. 1-year.
+_<sup>a</sup>In our Medicare-ARIC linked data in this publication, this incident dementia identification algorithm requires patients to have continuous Medicare Part D enrollment between V5 and V6. In pharmacoepidemiologic studies, this criterion could be adapted by requiring a minimum length of continuous Medicare Part D enrolment, e.g. 1-year._
 
-<sup>b</sup>In our Medicare-ARIC linked data in this publication, this prevalent dementia identification algorithm requires patients to have ≥ 1-year continuous Medicare Part D enrollment prior to V6. In pharmacoepidemiologic studies, this criterion could be adapted by requiring a minimum length of continuous Medicare Part D enrolment, e.g. 1-year.
+_<sup>b</sup>In our Medicare-ARIC linked data in this publication, this prevalent dementia identification algorithm requires patients to have ≥ 1-year continuous Medicare Part D enrollment prior to V6. In pharmacoepidemiologic studies, this criterion could be adapted by requiring a minimum length of continuous Medicare Part D enrolment, e.g. 1-year._
+
+
+
 
 
 <img src = images/Fig3_StudyDesignTimeline_Dementia.jpg width=1000>
 
-**Figure 3. Study design for empirical study.** For our algorithm, we additionally censored beneficiaries at the time their Part D coverage ended.<img width="540" height="39" alt="image" src="https://github.com/user-attachments/assets/d4420203-e557-42ca-8b4e-469976f58c3b" />
+**Figure 3. Study design for empirical study.** For our algorithm, we additionally censored beneficiaries at the time their Part D coverage ended.
 
