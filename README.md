@@ -14,3 +14,6 @@
 
 
 <img src = images/Fig3_StudyDesignTimeline_Dementia.jpg width=1000>
+
+**Figure 3. Study design for empirical study.** For our algorithm, we additionally censored beneficiaries at the time their Part D coverage ended.<img width="540" height="39" alt="image" src="https://github.com/user-attachments/assets/d4420203-e557-42ca-8b4e-469976f58c3b" />
+
