@@ -1,7 +1,7 @@
 /**************************************************************************************************/
 /* Program Name: 03e_ADRD_outcomes_Wang.sas                                                       */
 /* Purpose: Incident ADRD algorithm                                                               */
-/*                                                                                                */
+/* Author: Virginia Pate                                                                          */
 /* Input data: TRAIN.ADRD_COHORT, TRAIN.COGDIAG_CMS_FINAL                                         */
 /* Output data: TRAIN.ADRD_COHORT_INCIDENCE                                                       */
 /*                                                                                                */
