@@ -13,3 +13,4 @@
 <sup>b</sup>In our Medicare-ARIC linked data in this publication, this prevalent dementia identification algorithm requires patients to have ≥ 1-year continuous Medicare Part D enrollment prior to V6. In pharmacoepidemiologic studies, this criterion could be adapted by requiring a minimum length of continuous Medicare Part D enrolment, e.g. 1-year.
 
 
+<img src = images/Fig3_StudyDesignTimeline_Dementia.jpg width=1000>
