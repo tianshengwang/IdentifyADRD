@@ -1,5 +1,6 @@
 /***********************************************************************************************************/
 /* Program: ADRD_definitions.sas                                                                           */
+/* Author: Virginia Pate                                                                                   */
 /* Purpose: ICD code or drugs for ADRD algorithms                                                          */
 /***********************************************************************************************************/
 
@@ -198,5 +199,6 @@ data ad_name; length drugName $70 atc $7; input drugName $ atc $;
    ;
 run;
 %getndc(class=ad, atc=%STR('N06DX03'))
+
 
 
