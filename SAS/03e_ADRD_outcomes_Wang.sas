@@ -91,7 +91,7 @@ quit;
 
 
 
-/*   Scenario 1A: one single dementia code except 4 non-specfic ICD9 codes (29011, 2903, 29041, 2940)
+/*   Scenario 1A (candidate algorithm 1 in Table 1): one single dementia code except 4 non-specfic ICD9 codes (29011, 2903, 29041, 2940)
 				 The dementia diagnosis date was set as the date of service associated with the dementia codes*/
 /*proc sql;*/
 /*	create table adrd_s1a as select distinct bene_id, indexdate, */
@@ -104,7 +104,7 @@ quit;
 
 
 
-/*   Scenario 1B: Dementia code followed by a second dementia code at least one day apart.
+/*   Scenario 1B (candidate algorithm 2 in Table 1): Dementia code followed by a second dementia code at least one day apart.
                  The dementia diagnosis date set as the date of the second dementia code. 
 				 RELAX the "non-specfic 4 codes", i.e., allow theose 4 codes, our original one which may get a 43% sensitivity */
 
@@ -130,7 +130,7 @@ quit;
 
 
 
-/*   Scenario 1C: Dementia code followed by a second dementia code at least one day apart.  The    */
+/*   Scenario 1C (candidate algorithm 4 in Table 1): Dementia code followed by a second dementia code at least one day apart.  The    */
 /*               dementia diagnosis date set as the date of the second dementia code. 
                  require at least one is not one-specific 4 codes            */
 %macro s1c(gap=365);
@@ -297,7 +297,7 @@ quit;
 
 /* MERGE OUTCOMES - DEFINE FINAL OUTCOME VARIABLE*/	
 	/* Final Outcome Variable = Scenario 1B (2 ADRD dx claims within 1-year) 
-									 OR Scenario 5 (1 ADRD dx with new rx within +/-90-days ) */
+							 OR Scenario 5 (1 ADRD dx with new rx within +/-90-days ) */
 
 data out.adrd_wang_&drugA.v&drugB;
 	merge adrd_s1b adrd_s5_6;
