@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_wang_adrd_icd_definitions",
+  "source_file": "SAS/ADRD definitions.sas",
+  "source_blob_sha": "f40a759d309eb3d0e33e61c86d420674c9f08122",
+  "source_commit": "ee06f8f7b129bb7825cb4e95e06b207cf09b3895",
+  "notes": "DATA steps building the Jain/Bynum/Lee/Wang ICD-9 and ICD-10 dementia code-list reference tables (lines 42-137 of the source). Substituted a small mock dx.dx / dx10.dx10 (ICD reference libname the original points at a restricted institutional share) with DATALINES covering exactly the codes each algorithm's WHERE clause filters on plus 2 unrelated codes to exercise the filter. adrdref output libref repointed to WORK. One line excluded from this bundle: `if code ^in: (...) then wang_primary=1; else wang_primary=0;` (source line 124) triggers a Jenner parser bug -- caret-negated colon-modified IN operator fails to parse (`Unexpected token: Caret, expected Then`); isolated repro confirmed NOT/^/~  all fail when combined with IN:, while IN: alone and NOT IN (no colon) both work. Filed as a regression test in the internal corpus; tracked separately, not part of this PR. wang_secondary (the complementary flag on the same code list, computed via plain IN: on line 123) is unaffected and shipped as-is."
+}

@@ -1,0 +1,49 @@
+                                 Wang ADRD ICD-9 diagnosis codes (secondary-code flag)
+
+
+ code                                             description  wang  wang_secondary
+-----  ------------------------------------------------------  ----  --------------
+3310   Alzheimers disease                                         1               0
+2900   Senile dementia uncomplicated                              1               0
+2901   Presenile dementia                                         1               0
+2902   Senile dementia with delusional features                   1               0
+2903   Senile dementia with depressive features                   1               1
+2904   Vascular dementia                                          1               0
+2940   Amnestic syndrome                                          1               1
+2941   Dementia in conditions classified elsewhere                1               0
+2942   Dementia unspecified without behavioral disturbance        1               0
+3311   Pick disease                                               1               0
+3312   Senile degeneration of brain                               1               0
+3317   Cerebral degeneration in diseases classified elsewhere     1               0
+33182  Dementia with Lewy bodies                                  1               0
+
+                                            Wang ADRD ICD-10 diagnosis codes
+
+
+ code                                                description  wang  wang_primary  wang_secondary
+-----  ---------------------------------------------------------  ----  ------------  --------------
+G300   Alzheimers disease with early onset                           1             1               0
+G301   Alzheimers disease with late onset                            1             1               0
+G308   Other Alzheimers disease                                      1             1               0
+G309   Alzheimers disease unspecified                                1             1               0
+F0150  Vascular dementia without behavioral disturbance              1             1               0
+F0151  Vascular dementia with behavioral disturbance                 1             1               0
+F0280  Dementia in other diseases without behavioral disturbance     1             1               0
+F0281  Dementia in other diseases with behavioral disturbance        1             1               0
+F0390  Unspecified dementia without behavioral disturbance           1             1               0
+F0391  Unspecified dementia with behavioral disturbance              1             1               0
+F04    Amnestic disorder due to known physiological condition        1             1               0
+R4181  Age related cognitive decline                                 1             1               0
+G3101  Pick disease                                                  1             1               0
+G3109  Frontotemporal dementia unspecified                           1             1               0
+G311   Cerebral degeneration primary                                 1             1               0
+G3183  Dementia with Lewy bodies                                     1             1               0
+
+                                     Jain vs Bynum vs Lee vs Wang ICD-9 code counts
+
+ algorithm  n_codes
+----------  -------
+ jain_icd9       19
+bynum_icd9       16
+  lee_icd9       14
+ wang_icd9       13

@@ -1,0 +1,10 @@
+                            Wang final incident-dementia outcome: Scenario 1B OR Scenario 5
+
+
+  bene_id  indexdate  adrd_wang_dt  adrd_dxOnly_dt
+---------  ---------  ------------  --------------
+100000001  01JAN2015     20SEP2015       20SEP2015
+100000002  01FEB2015     10APR2015               .
+100000003  01MAR2015     01SEP2015       01SEP2015
+100000005  01MAY2015     15JUN2015               .
+
