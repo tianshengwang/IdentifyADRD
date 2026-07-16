@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-16T06:55:00Z",
+  "_captured_run_id": "r_19487ecdceae49bea500d2b4a75d3eaa",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote adrdref.wang_adrd_icd9dx (13 rows, 4 columns).",
+    "NOTE: Wrote adrdref.wang_adrd_icd10dx (16 rows, 5 columns).",
+    "NOTE: Wrote adrdref.jain_adrd_icd9dx (19 rows, 4 columns).",
+    "NOTE: PROC PRINT completed: 13 observations printed, 4 variables",
+    "NOTE: PROC SQL statement used."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

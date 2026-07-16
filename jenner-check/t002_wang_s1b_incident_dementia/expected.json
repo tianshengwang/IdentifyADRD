@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-16T07:20:00Z",
+  "_captured_run_id": "r_202e550c21fd48da998245fa252977bb",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote adrd_s1b (2 rows, 4 columns).",
+    "NOTE: Wrote adrd_s5_6 (3 rows, 4 columns).",
+    "NOTE: Wrote adrd_wang_outcome (4 rows, 4 columns).",
+    "NOTE: PROC PRINT completed: 4 observations printed, 4 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

@@ -1,0 +1,116 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: Library ADRDREF uses 1 concatenated paths.
+NOTE: DATA dx_dx
+
+NOTE: Processing inline DATALINES (21 lines)
+
+NOTE: Read 21 rows from DATALINES.
+NOTE: Wrote dx_dx (21 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dx10_dx10
+
+NOTE: Processing inline DATALINES (21 lines)
+
+NOTE: Read 21 rows from DATALINES.
+NOTE: Wrote dx10_dx10 (21 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Library DX uses 1 concatenated paths.
+NOTE: Library DX10 uses 1 concatenated paths.
+NOTE: DATA dx.dx
+
+
+NOTE: Read 21 rows from dx_dx.
+NOTE: Wrote dx.dx (21 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA dx10.dx10
+
+
+NOTE: Read 21 rows from dx10_dx10.
+NOTE: Wrote dx10.dx10 (21 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.jain_adrd_icd9dx
+
+
+NOTE: Read 19 rows from dx.dx.
+NOTE: Wrote adrdref.jain_adrd_icd9dx (19 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.jain_adrd_icd10dx
+
+
+NOTE: Read 18 rows from dx10.dx10.
+NOTE: Wrote adrdref.jain_adrd_icd10dx (18 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.bynum_adrd_icd9dx
+
+
+NOTE: Read 16 rows from dx.dx.
+NOTE: Wrote adrdref.bynum_adrd_icd9dx (16 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.bynum_adrd_icd10dx
+
+
+NOTE: Read 17 rows from dx10.dx10.
+NOTE: Wrote adrdref.bynum_adrd_icd10dx (17 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.lee_adrd_icd9dx
+
+
+NOTE: Read 14 rows from dx.dx.
+NOTE: Wrote adrdref.lee_adrd_icd9dx (14 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.lee_adrd_icd10dx
+
+
+NOTE: Read 17 rows from dx10.dx10.
+NOTE: Wrote adrdref.lee_adrd_icd10dx (17 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.wang_adrd_icd9dx
+
+
+NOTE: Read 13 rows from dx.dx.
+NOTE: Wrote adrdref.wang_adrd_icd9dx (13 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA adrdref.wang_adrd_icd10dx
+
+
+NOTE: Read 16 rows from dx10.dx10.
+NOTE: Wrote adrdref.wang_adrd_icd10dx (16 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Wang ADRD ICD-9 diagnosis codes (secondary-code flag).
+NOTE: PROC PRINT data=adrdref.wang_adrd_icd9dx
+
+NOTE: PROC PRINT completed: 13 observations printed, 4 variables
+NOTE: Option TITLE changed to Wang ADRD ICD-10 diagnosis codes.
+NOTE: PROC PRINT data=adrdref.wang_adrd_icd10dx
+
+NOTE: PROC PRINT completed: 16 observations printed, 5 variables
+NOTE: Option TITLE changed to Jain vs Bynum vs Lee vs Wang ICD-9 code counts.
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.

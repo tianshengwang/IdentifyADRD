@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_wang_s1b_incident_dementia",
+  "source_file": "SAS/03e_ADRD_outcomes_Wang.sas",
+  "source_blob_sha": "a0c4f426f7ee0eb600585a15ec094a91062e3a82",
+  "source_commit": "ee06f8f7b129bb7825cb4e95e06b207cf09b3895",
+  "notes": "Final incident-dementia outcome DATA step (source lines 298-315): MERGE of adrd_s1b and adrd_s5_6 by bene_id/indexdate, OUTPUT when either Scenario 1B or Scenario 5 fired, adrd_wang_dt = MIN of the two dates. Copied verbatim. adrd_s1b / adrd_s5_6 (normally built by upstream PROC SQL self-joins against restricted CMS claims libraries, der.alldx / raw.pde_saf_file&yr) supplied directly via DATALINES covering: bene satisfying 1B only, 5-6 only, both, and (via a bene present in the s5_6 mock but not the s1b mock) neither-then-one-path. Note: the upstream %s1b/%s5_6 PROC SQL macros themselves (source lines 111-294) currently fail to run on Jenner -- a `where=()` dataset option on a joined table combined with date-column arithmetic (col+N) triggers a DataFusion type-coercion error ('Cannot coerce arithmetic expression Utf8 + Int64'); isolated and filed as a regression test separately, not shipped as a bundle. Also note: constructing the DATALINES mock for adrd_s1b initially used list-style `date9.` informats 3x in one INPUT statement, which triggered a second, unrelated Jenner bug (3rd repeated date9. list-input field silently returns missing) -- worked around here (in our own mock-data INPUT statement only, not in any of the author's code) using explicit @n column pointers; also filed as a regression test."
+}
